@@ -34,3 +34,14 @@ function changeImage() {
 }
 
 setInterval(changeImage, 2000)
+
+//time date
+var datetime = new Date();
+console.log(datetime);
+document.getElementById("time").textContent = datetime;
+
+//ScrolToTop
+
+function scrollToTop() {
+  window.scrollTo(0, 0)
+}

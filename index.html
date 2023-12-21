@@ -10,10 +10,10 @@
   <nav>
     <img src="assets/logo.jpeg" alt="Logo" class="logo">
     <ul class="nav-items">
-      <li>Home</li>
-      <li>Our Profile</li>
-      <li>Achievement</li>
-      <li>Message Us</li>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#profile" class="active">Our Profile</a></li>
+      <li><a href="#fas" class="active">Facilitations</a></li>
+      <li><a href="#message" class="active">Message Us</a></li>
     </ul>
 
     <div class="menu-toggle">
@@ -28,11 +28,11 @@
 
   <!-- header 1 start -->
   <header>
-    <h1>
-      Hai Luthfi, Welcome to our websitem
+    <h1 style="text-align: left;" id="home">
+      Hai Bruhh, Welcome To Website
     </h1>
-    <h4> Please Enjoy</h4>
-    <div class="slider">
+    <h4 style="text-align: left;"> Please Enjoy, and stay Learning</h4>
+    <div id="profile" class="slider">
       <img src="assets/image/banner.jpg" class="slider-image" style="display: block;">
       <img src="assets/image/slide1.jpeg" class="slider-image" style="display: none;">
       <img src="assets/image/slide2.jpeg" class="slider-image" style="display: none;">
@@ -45,8 +45,10 @@
   <!-- header 1 end -->
 
   <!-- Facilitations start -->
-  <div class="facilitations">
+  <h1 style="margin: 20px;">Our Facilitation</h1>
+  <div id="fas" class="facilitations">
     <!-- circel 1 start -->
+    
     <div>
       <div class="circle" style="background-image: url('assets/image/Lab.jpeg');"></div>
       <h4>Computer Lab</h4>
@@ -72,14 +74,14 @@
   </header>
   <!-- Facilitation end -->
 
-  <!-- Contact Me -->
-  <div class="container">
+  <!-- Massage Us -->
+  <div id="message" class="container">
     <div class="card-container">
       <div class="right">
         <div class="right-container">
           <form action>
-            <h2 class="lg-view">Message Us</h2>
-            <h2 class="sm-view">Message Us</h2>
+            <h1 class="lg-view">Message Us</h1>
+            <h1 class="sm-view">Message Us</h1>
             <label>Nama :</label>
             <input type="text" id="first-nama-input" placeholder="Nama"><br>
             <label>Tanggal Lahir :</label>
@@ -97,7 +99,7 @@
         </div>
         <div class="left">
           <div class="left-container">
-            <h2>Current Time :</h2>
+            <h2>Current Time : <span id="time"> </span></h2>
             <p>Nama : Muhammad Agus Luthfi</p>
             <p>Tanggal Lahir : 07/21/2000</p>
             <p>Jenis Kelamin : Laki - Laki</p>
@@ -112,6 +114,7 @@
     <div class="footer">
   <p>Created By RevoU</p>
     </div>
+    <div onclick="scrollToTop()" class="scrollTop">Top</div>
     <script src="js/script.js"></script>
   </body>
 </html>
